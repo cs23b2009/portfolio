@@ -33,7 +33,6 @@ export const experiences: ExperienceInterface[] = [
     ],
     skills: ["Node.js", "express.js", "CI/CD", "Git"],
     companyUrl: "https://switchit.com",
-    logo: "/experience/switchit.png",
   },
   {
     id: "pearlthoughts",
@@ -53,7 +52,6 @@ export const experiences: ExperienceInterface[] = [
     ],
     skills: ["Node.js", "express.js", "JWT", "MySQL", "MongoDB"],
     companyUrl: "https://pearlthoughts.com",
-    logo: "/experience/pearlthoughts.png",
   },
   {
     id: "viswam-ai",
@@ -73,7 +71,6 @@ export const experiences: ExperienceInterface[] = [
     ],
     skills: ["Python", "Machine Learning", "Artificial Intelligence", "Data Science"],
     companyUrl: "https://viswam.ai",
-    logo: "/experience/viswam.png",
   },
   {
     id: "cs-club-core",
