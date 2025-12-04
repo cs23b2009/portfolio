@@ -1,0 +1,33 @@
+export const siteConfig = {
+  name: "Dasapathi Indra Kumar | Developer Portfolio",
+  authorName: "Dasapathi Indra Kumar",
+  username: "indrakumar369",
+  description:
+    "Dasapathi Indra Kumar's portfolio - B.Tech CSE (AI) student at IIITDM Kancheepuram. AI/ML enthusiast and Full Stack Developer.",
+  url: "https://indrakumar.xyz",
+  links: {
+    twitter: "https://x.com/indrakumar369",
+    github: "https://github.com/cs23b2009",
+  },
+  ogImage: "https://indrakumar.xyz/profile-img.jpg",
+  iconIco: "/favicon.ico",
+  logoIcon: "/logo.png",
+  keywords: [
+    "Dasapathi Indra Kumar",
+    "Full Stack Developer",
+    "AI Developer",
+    "Machine Learning Engineer",
+    "Web Developer Portfolio",
+    "Next.js portfolio",
+    "React portfolio",
+    "Developer portfolio",
+    "Portfolio website",
+    "Next.js template",
+    "Modern portfolio",
+    "Frontend developer",
+    "Backend developer",
+    "Open source contributor",
+    "IIITDM Kancheepuram",
+    "CSE AI",
+  ],
+};
