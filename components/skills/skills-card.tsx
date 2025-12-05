@@ -11,7 +11,7 @@ export default function SkillsCard({ skills }: SkillsCardProps) {
       {skills.map((skill, id) => (
         <div
           key={id}
-          className="relative overflow-hidden rounded-lg border bg-background p-2"
+          className="relative overflow-hidden rounded-lg border bg-background p-2 hover:border-primary transition-colors duration-300"
         >
           <div className="flex h-[230px] flex-col justify-between rounded-md p-6 sm:h-[230px]">
             <skill.icon size={50} />
