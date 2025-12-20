@@ -73,7 +73,16 @@ export type ValidSkills =
   | "Machine Learning"
   | "Artificial Intelligence"
   | "Data Science"
-  | "Framer Motion";
+  | "Framer Motion"
+  | "TanStack Query"
+  | "Recharts"
+  | "Streamlit"
+  | "OpenCV"
+  | "Scikit-Learn"
+  | "Next.js 15"
+  | "TypeScript"
+  | "XGBoost"
+  | "SHAP";
 
 export type ValidCategory =
   | "Full Stack"
