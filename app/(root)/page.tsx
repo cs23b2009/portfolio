@@ -12,6 +12,8 @@ import ExperienceCard from "@/components/experience/experience-card";
 import ProjectCard from "@/components/projects/project-card";
 import SkillsCard from "@/components/skills/skills-card";
 import { Button, buttonVariants } from "@/components/ui/button";
+import CustomTooltip from "@/components/ui/custom-tooltip";
+import { SocialLinks } from "@/config/socials";
 import { featuredContributions } from "@/config/contributions";
 import { experiences } from "@/config/experience";
 import { pagesConfig } from "@/config/pages";
@@ -104,34 +106,36 @@ export default function IndexPage() {
             </p>
           </div>
 
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-primary/20 rounded-full blur-3xl -z-10 opacity-50 pointer-events-none" />
-          <div className="flex flex-col mt-10 items-center justify-center sm:flex-row sm:space-x-4 gap-3">
-            <AnimatedText delay={0.6}>
-              <Link
-                href={"https://github.com/cs23b2009"}
-                target="_blank"
-                className={cn(buttonVariants({ size: "lg" }))}
-                aria-label="View GitHub profile"
+          <div className="flex items-center justify-center space-x-4 mt-4">
+            {SocialLinks.map((item, ind) => (
+              <CustomTooltip
+                icon={item.icon}
+                text={
+                  item.rating
+                    ? `${item.username} | ${item.rating} ${item.rank ? `(${item.rank})` : ""}`
+                    : item.username
+                }
+                key={ind}
               >
-                <Icons.gitHub className="w-4 h-4 mr-2" /> GitHub
-              </Link>
-            </AnimatedText>
-            <AnimatedText delay={0.8}>
-              <Link
-                href={"/contact"}
-                rel="noreferrer"
-                className={cn(
-                  buttonVariants({
-                    variant: "outline",
-                    size: "lg",
-                  })
-                )}
-                aria-label="Contact Me"
-              >
-                <Icons.contact className="w-4 h-4 mr-2" /> Contact
-              </Link>
-            </AnimatedText>
+                <Link
+                  href={item.link}
+                  target="_blank"
+                  className={cn(
+                    buttonVariants({
+                      variant: "ghost",
+                      size: "sm",
+                    }),
+                    "h-10 w-10 p-2"
+                  )}
+                >
+                  <item.icon className="h-5 w-5" />
+                </Link>
+              </CustomTooltip>
+            ))}
           </div>
+
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-primary/20 rounded-full blur-3xl -z-10 opacity-50 pointer-events-none" />
+
           <AnimatedText delay={1.2}>
             <Icons.chevronDown className="h-6 w-6 mt-10" />
           </AnimatedText>

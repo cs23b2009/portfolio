@@ -5,37 +5,57 @@ interface SocialInterface {
   username: string;
   icon: any;
   link: string;
+  rating?: string | number;
+  rank?: string;
 }
 
 export const SocialLinks: SocialInterface[] = [
   {
     name: "Github",
-    username: "@cs23b2009",
+    username: process.env.NEXT_PUBLIC_GITHUB_USERNAME || "Github",
     icon: Icons.gitHub,
-    link: "https://github.com/cs23b2009",
+    link: process.env.NEXT_PUBLIC_GITHUB_URL || "https://github.com",
   },
   {
     name: "LinkedIn",
-    username: "Dasapathi Indra Kumar",
+    username: process.env.NEXT_PUBLIC_LINKEDIN_USERNAME || "LinkedIn",
     icon: Icons.linkedin,
-    link: "https://linkedin.com/in/indra-kumar-hi369",
+    link: process.env.NEXT_PUBLIC_LINKEDIN_URL || "https://linkedin.com",
   },
   {
     name: "LeetCode",
-    username: "@indrakumar45919",
+    username: process.env.NEXT_PUBLIC_LEETCODE_USERNAME || "LeetCode",
     icon: Icons.leetcode,
-    link: "https://leetcode.com/u/indrakumar45919",
+    link: process.env.NEXT_PUBLIC_LEETCODE_URL || "https://leetcode.com",
+    rating: process.env.NEXT_PUBLIC_LEETCODE_RATING,
+    rank: process.env.NEXT_PUBLIC_LEETCODE_RANK,
+  },
+  {
+    name: "Codeforces",
+    username: process.env.NEXT_PUBLIC_CODEFORCES_USERNAME || "Codeforces",
+    icon: Icons.codeforces,
+    link: process.env.NEXT_PUBLIC_CODEFORCES_URL || "https://codeforces.com",
+    rating: process.env.NEXT_PUBLIC_CODEFORCES_RATING,
+    rank: process.env.NEXT_PUBLIC_CODEFORCES_RANK,
+  },
+  {
+    name: "CodeChef",
+    username: process.env.NEXT_PUBLIC_CODECHEF_USERNAME || "CodeChef",
+    icon: Icons.codechef,
+    link: process.env.NEXT_PUBLIC_CODECHEF_URL || "https://codechef.com",
+    rating: process.env.NEXT_PUBLIC_CODECHEF_RATING,
+    rank: process.env.NEXT_PUBLIC_CODECHEF_RANK,
   },
   {
     name: "Gmail",
-    username: "indrakumarai369",
+    username: process.env.NEXT_PUBLIC_GMAIL_USERNAME || "Gmail",
     icon: Icons.gmail,
-    link: "mailto:indrakumarai369@gmail.com",
+    link: process.env.NEXT_PUBLIC_GMAIL_URL || "mailto:",
   },
   {
     name: "Phone",
-    username: "+91-8328516654",
+    username: process.env.NEXT_PUBLIC_PHONE_USERNAME || "Phone",
     icon: Icons.contact,
-    link: "tel:+918328516654",
+    link: process.env.NEXT_PUBLIC_PHONE_URL || "tel:",
   },
 ];

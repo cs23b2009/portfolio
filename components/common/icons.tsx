@@ -72,6 +72,8 @@ import {
   SiGit,
   SiLeetcode,
   SiGithub,
+  SiCodechef,
+  SiCodeforces,
 } from "react-icons/si";
 
 export const Icons = {
@@ -139,6 +141,8 @@ export const Icons = {
   git: SiGit,
   leetcode: SiLeetcode,
   gitHub: SiGithub,
+  codechef: SiCodechef,
+  codeforces: SiCodeforces,
   successAnimated: ({ ...props }: LucideProps) => (
     <div className="svg-container">
       <svg
