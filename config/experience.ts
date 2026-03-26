@@ -16,26 +16,6 @@ export interface ExperienceInterface {
 
 export const experiences: ExperienceInterface[] = [
   {
-    id: "switchit",
-    position: "Software Development Engineer Intern",
-    company: "SwitchiT",
-    location: "Remote",
-    startDate: new Date("2025-09-01"),
-    endDate: "Present",
-    description: [
-      "Enhanced platform efficiency by optimizing backend API response times by 25%.",
-      "Collaborated in agile sprints to implement new product features and fix production issues.",
-      "Improved deployment automation pipelines, reducing manual testing efforts by 30%.",
-    ],
-    achievements: [
-      "Enhanced platform efficiency by optimizing backend API response times by 25%.",
-      "Improved deployment automation pipelines, reducing manual testing efforts by 30%.",
-    ],
-    skills: ["Node.js", "express.js", "CI/CD", "Git"],
-    companyUrl: "https://switchit.com",
-    logo: "/experience/switchit.png",
-  },
-  {
     id: "pearlthoughts",
     position: "Backend Development Intern",
     company: "PearlThoughts",
